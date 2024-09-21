@@ -1,13 +1,6 @@
-//console.log('Bağlantı kontrolü')
-//alert('Bağlantı kontrolü')
 
-//1-Tüm Koltukların kapsayıcısı container divi çek
-//2-container a clikck eventi ekle
-
-//html tarafından querySelector ile className üzerinden eleman çekme
 const container = document.querySelector(".container");
-//html tarafından çekilen elemanın kontrolü
-//console.log(container);
+
 
 const infoText = document.querySelector(".infoText");
 //console.log(infoText)
@@ -98,8 +91,7 @@ const calculateTotal = () => {
 };
 calculateTotal();
 container.addEventListener("click", (pointerEvent) => {
-  //console.log('container tıklandı')
-  //console.log(pointerEvent.target.offsetParent)
+ 
   const clickedSeat = pointerEvent.target.offsetParent;
 
   if (
